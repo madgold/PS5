@@ -36,7 +36,8 @@ public class Catalog {
 	
 	public Book GetBook(String BookID) {
 		Book b = null;
-		//write the code to take given catalog and loop 
+		//write the code to take given catalog and loop through the catalog entries and 
+		//array list
 		return b;
 	}
 	
@@ -50,13 +51,6 @@ public class Catalog {
 		this.books.add(b);
 		
 	}
-	
-
-	
-	
-
-
-	
 	
 	
 	

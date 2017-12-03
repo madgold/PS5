@@ -99,11 +99,26 @@ public class Book {
 		this.description = description;
 	}
 
+	//might not need this @38
 	public static Book GetBook(Catalog cat, String BookID) {
 		Book b = null;
 		
 		return b;
 	}
+	//
+	
+	//might not need @43
+	public Catalog AddBook(Catalog cat, Book b) throws Exception {
+		for (Book bk : cat.books) {
+			if (bk.getId() == b.getId()) {
+				throw new Exception ("book exists");
+				
+			}
+		}
+		cat.books.add(b);
+		return cat;
+	}
+	//
 	
 	
 	public double getCost() {
@@ -114,11 +129,6 @@ public class Book {
 	public void setCost(double cost) {
 		Cost = cost;
 	}
-
-
-
-
-	
 	
 
 }
